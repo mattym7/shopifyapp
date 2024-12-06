@@ -31,3 +31,12 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Profile {
+  id        Int      @id @default(autoincrement())
+  buttonId  String   // Unique identifier for the button
+  color     String
+  fontSize  String
+  text      String
+  performanceScore Float @default(0)
+}

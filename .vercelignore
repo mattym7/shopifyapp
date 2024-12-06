@@ -1,0 +1,15 @@
+# Exclude local dev files
+.vscode/
+node_modules/ # This is rebuilt automatically by Vercel
+.git/
+.env          # Add your environment variables in Vercel Dashboard
+prisma/migrations/ # Optional, only needed locally
+
+# Exclude CLI/Shopify-specific dev folders
+/extensions/
+/tests/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.DS_Store
